@@ -1,0 +1,305 @@
+/*--font-family: 'Anonymous Pro', monospace;
+font-family: 'Comfortaa', cursive;
+font-family: 'Quicksand', sans-serif;*/
+.logo-img{
+    width: 20%;
+    margin-right:200px;
+}
+#navbarNav{
+    font-family: 'Comfortaa', cursive;
+}
+
+/*-- Form*/
+#form {
+    margin: 0;
+    background: #25A3FF;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  h1 {
+    position: relative;
+    color: #fff;
+    opacity: 0;
+    transition: .8s ease-in-out;
+  }
+  
+  #progress {
+    position: absolute;
+    background: #0069ec;
+    height: 100vh;
+    width: 0;
+    transition: width 0.2s ease-in-out;
+  }
+  
+  .center {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /******
+    Form
+   ******/
+  
+  #register {
+    background: #fff;
+    position: relative;
+    width: 410px;
+    padding: 2px 15px 20px 15px;
+    box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.3);
+    transition: transform .1s ease-in-out;
+  }
+  
+  #register.close {
+    width: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: .8s ease-in-out;
+    box-shadow: 0 16px 24px 2px rgba(0,0,0,0);
+  }
+  
+  .next {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    font-size: 40px;
+    color: #25a3ff;
+    float: right;
+    cursor: pointer;
+  }
+  .next:hover {color: #333}
+  .wrong .next {color: #ff2d26}
+  .close .next {color: #fff}
+  
+  #inputContainer {
+    position: relative;
+    opacity: 0;
+    width: 350px;
+    margin-top: 25px;
+    transition: opacity .3s ease-in-out;
+  }
+  
+  #inputContainer input {
+    width: 100%;
+    padding: 0 5px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    outline: 0;
+    background: transparent;
+    box-shadow:none;
+  }
+  
+  #inputLabel {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 5px;
+    transition: .2s ease-in-out;
+  }
+  
+  #inputContainer input:valid + #inputLabel {
+    top: -15px;
+    font-size: 11px;
+    font-weight: normal;
+    color: #9e9e9e;
+  }
+  
+  #inputProgress {
+    position: absolute;
+    border-bottom: 2px solid #25a3ff;
+    padding: 3px 0;
+    width: 0;
+    transition: width .6s ease-in-out;
+  }
+  
+  
+
+
+  h2{
+      font-family: 'Quicksand', sans-serif;
+      text-align: center;
+      padding: 7%;
+      
+  }
+
+  .over{
+    padding: 4%;
+  }
+
+  p{
+      font-family: 'Anonymous Pro', monospace;
+      text-align: center;
+  }
+  .list li{
+      
+      font-family: 'Comfortaa', cursive;
+      line-height: 1.8rem;
+      font-size: 1.3rem;
+      
+  }
+  #features{
+      background-color:#25a3ff ;
+      color: #fff;
+}
+  .img-fea{
+      width: 50%;
+  }
+  h3{
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    color: #fff;
+    padding: 5%;
+
+  }
+.hk{
+    text-align: center;
+    line-height: 2.7rem;
+    font-size: 1.8rem;
+}
+ /*price/
+
+ /* Font */
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+/* Design */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+
+body {
+  color: #272727;
+  font-family: 'Quicksand', serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  
+}
+
+.main{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.btn {
+  color: #ffffff;
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  padding: 1rem;
+  background: linear-gradient(to bottom left, #25a3ff 40%, #FFC39E 100%);
+}
+
+.card_title {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+}
+
+.card_text {
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;    
+  font-weight: 400;
+}
+.made_by{
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: 35px;
+  text-align: center;
+}
+#location{
+        background-color: #25a3ff;
+}
+.list-group-flush{
+    background-color: #25a3FF;
+    font-family: 'Comfortaa', cursive;
+}
+
+#contact-us{
+    background-color: #25a3FF;
+
+}
+
+
+
+#footer{
+    background-color:black;
+    color: white;
+}
+.logo-image{
+    width: 60%;
+    padding: 5%;
+}
